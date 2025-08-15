@@ -1,0 +1,173 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: "Lato", sans-serif;
+}
+
+/* header strip */
+.bg-blue{
+  background: #233a95;
+}
+.headerWrapper .top-strip {
+ padding: 8px 0px;
+}
+.headerWrapper .top-strip p{
+ color: #fff;
+ font-size: 12px;
+ font-weight: 500;
+}
+
+/* header part-1 */
+.headerWrapper .header{
+ background: rgba(0, 0, 0, 0.115);
+ width: 100%;
+ height: auto;
+ padding: 15px 0px
+}
+.logoWrapper img{
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  /* background-color: red; */
+}
+
+/* header part-2 */
+/* part-2.1, Your Location */
+.headerWrapper .header .part2 .countryDrop{
+  width: 170px;
+  /* 170px */
+  height: 60px;
+  min-width: 170px; 
+  /* 170px */
+  color:#000;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  padding: 10px 15px;
+  /* 10 15 */
+  /* background-color: red; */
+}
+.headerWrapper .header .part2 .countryDrop{
+  text-align: left;
+  justify-content: space-between;
+  /* background-color: green; */
+}
+.headerWrapper .header .part2 .countryDrop .label{
+  font-size: 12px;
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.4);
+  line-height: 16px;
+}
+.headerWrapper .header .part2 .countryDrop .name{
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #233a95;
+  font-weight: 700;
+  line-height: 16px;
+}
+.headerWrapper .header .part2 .countryDrop span.ml-auto svg{
+  width: 20px;
+  height: 20px;
+  margin-left: auto;  
+  opacity: 0.7;
+}
+
+/* header part-2 */
+/* part-2.2, Search bar */
+header .headerSearch{
+  width: 60%;
+  height: 60px;
+  background-color: #f3f4f7;
+  padding: 10ps;
+  position: relative;
+  border-radius: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-right: 12px;
+  margin-left: 12px;
+}
+header .headerSearch input{
+  background: transparent;
+  outline: none ;
+  border: none;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 40px;
+  padding: 0px 20px;
+  margin-right: 36px;
+}
+header .headerSearch input::placeholder{
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 18px;
+}
+header .headerSearch button{
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  z-index: 100;;
+  min-width: 40px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+header .headerSearch button svg{
+  font-size: 400px !important;
+}
+
+/* header part-2 */
+/* part-2.3, USER-ICON + PRICE + CART */
+header .part3{
+width: 170px;
+  height: 60px;
+  min-width: 170px; 
+  /* border: 1px solid rgba(0, 0, 0, 0.2); */
+  /* padding: 10px 0px; */
+}
+header .part3 .circle{
+  /* background-color: rgb(146, 68, 68); */
+  align-items: center;
+  justify-content: center;
+  min-width: 45px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0);
+}
+header .part3 .circle svg{
+  font-size: 22px;
+}
+.cartTab{
+  width: 100%;
+  padding-left: 8px;
+}
+.cartTab .Price{
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 700;
+  margin-right: 10px;
+  background-color: red !important;
+}
+.cartTab button{
+  background: #fff1ee;;
+}
+.cartTab button svg{
+  color: #ea2b0f;;
+}
+.cartTab .count{
+  position: absolute;
+  top: -6px;
+  right: -4px;
+  background: #ea2b0f;
+  border-radius: 50%;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+}
+
+
