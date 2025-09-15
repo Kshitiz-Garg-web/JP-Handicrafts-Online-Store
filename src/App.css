@@ -1,3 +1,6 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css");
+
 /* ===== GLOBAL RESET ===== */
 * {
   margin: 0;
@@ -321,7 +324,7 @@ nav .navPart1 .sidebarNav {
   opacity: 0;
   z-index: -10;
   transition: all 5s ease-in;
-  
+
 
 }
 
@@ -484,6 +487,47 @@ nav .navPart2 ul li .submenu a button {
   height: 100%;
 }
 
+/* home part start */
+
+/* homesectionbanner */
+
+.homeBannerSection {
+  position: relative;
+  /* background-color: red; */
+  height: max-content;
+}
+
+.homeBannerSection * {
+  outline: none;
+}
+
+.homeBannerSection .slick-arrow {
+  position: absolute;
+  top: 45%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.786);
+}
+
+.homeBannerSection .slick-arrow.slick-next {
+  right: 10px;
+}
+.homeBannerSection .slick-arrow.slick-prev {
+  left: 10px;
+}
+
+/* .homeBannerSection .slick-arrow.slick-next::before {
+  content:'';
+} */
+ /* .homeBannerSection .slick-arrow.slick-prev::before {
+  content:'';
+} */
+
 
 
 /* ===== RESPONSIVE DESIGN ===== */
@@ -520,7 +564,6 @@ nav .navPart2 ul li .submenu a button {
   }
 
   header .part3 {
-
     min-width: 150px;
   }
 
@@ -531,16 +574,17 @@ nav .navPart2 ul li .submenu a button {
     /* gap: 10px; */
     /* background-color: red; */
     position: relative;
-
-
   }
 
   nav .navPart1 {
     order: 2;
     /* background-color: black; */
-    position: absolute;
+    /* position: absolute;
     top: 110%;
-    left: 0px;
+    left: 0px; */
+    display: none;
+    visibility: hidden;
+    opacity: 0;
   }
 
   nav .allCatTab {
@@ -554,6 +598,9 @@ nav .navPart2 ul li .submenu a button {
     order: 1;
     width: 100%;
     justify-content: center;
+    /* display: none;
+    visibility: hidden;
+    opacity: 0; */
   }
 
   nav .navPart2 ul {
@@ -561,6 +608,8 @@ nav .navPart2 ul li .submenu a button {
     flex-wrap: wrap;
   }
 }
+
+
 
 /* Small Screens (Mobile) */
 @media (max-width: 768px) {
