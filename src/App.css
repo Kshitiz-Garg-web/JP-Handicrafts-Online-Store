@@ -1,22 +1,25 @@
 /* ===== GLOBAL RESET ===== */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: "Lato", sans-serif;
+  overflow: hidden;
 }
 
 /* ===== HEADER TOP STRIP SECTION ===== */
-.bg-blue{
+.bg-blue {
   background: #233a95;
 }
+
 .headerWrapper .top-strip {
   padding: 8px 0px;
 }
-.headerWrapper .top-strip p{
+
+.headerWrapper .top-strip p {
   color: #fff;
   font-size: 12px;
   font-weight: 500;
@@ -24,7 +27,7 @@ body{
 }
 
 /* ===== HEADER MAIN SECTION ===== */
-.headerWrapper .header{
+.headerWrapper .header {
   /* background: rgba(0, 0, 0, 0.115); */
   width: 100%;
   height: auto;
@@ -32,17 +35,17 @@ body{
 }
 
 /* Header Logo Section */
-.logoWrapper img{
+.logoWrapper img {
   width: 80px;
   height: 80px;
   object-fit: contain;
 }
 
 /* Header Location Dropdown Section */
-.headerWrapper .header .part2 .countryDrop{
+.headerWrapper .header .part2 .countryDrop {
   width: 170px;
   height: 60px;
-  min-width: 170px; 
+  min-width: 170px;
   color: #000;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 7px;
@@ -53,14 +56,14 @@ body{
   text-align: left;
 }
 
-.headerWrapper .header .part2 .countryDrop .label{
+.headerWrapper .header .part2 .countryDrop .label {
   font-size: 12px;
   text-transform: capitalize;
   color: rgba(0, 0, 0, 0.4);
   line-height: 16px;
 }
 
-.headerWrapper .header .part2 .countryDrop .name{
+.headerWrapper .header .part2 .countryDrop .name {
   font-size: 14px;
   text-transform: capitalize;
   color: #233a95;
@@ -68,20 +71,21 @@ body{
   line-height: 16px;
 }
 
-.headerWrapper .header .part2 .countryDrop span.ml-auto svg{
+.headerWrapper .header .part2 .countryDrop span.ml-auto svg {
   width: 20px;
   height: 20px;
-  margin-left: auto;  
+  margin-left: auto;
   opacity: 0.7;
 }
 
 /* country drop down inner part */
-.locationModal .MuiPaper-elevation{
+.locationModal .MuiPaper-elevation {
   /* background-color: transparent; */
-   padding: 25px; 
-   position: relative;
+  padding: 25px;
+  position: relative;
 }
-.locationModal .countryList{
+
+.locationModal .countryList {
   /* background-color: red; */
   /* margin-bottom: 0px; */
   max-height: 300px;
@@ -90,7 +94,7 @@ body{
   margin-top: 18px;
 }
 
-.locationModal .countryList li{
+.locationModal .countryList li {
   list-style: none;
   /* background-color: green; */
   /* margin-block: 10px; */
@@ -102,12 +106,13 @@ body{
   width: 97%;
   margin-left: auto;
 }
-.locationModal .countryList li:hover{
+
+.locationModal .countryList li:hover {
   background-color: #f3f4f7;
-  color: #233a95;  
+  color: #233a95;
 }
- 
-.locationModal .countryList li Button{
+
+.locationModal .countryList li Button {
   /* background-color: red; */
   text-transform: capitalize;
   font-size: 14px;
@@ -118,13 +123,13 @@ body{
   padding: 12px 24px;
 }
 
-.locationModal .countryList li.active{
-  border:1px solid #233a95;
+.locationModal .countryList li.active {
+  border: 1px solid #233a95;
   transform: scaleX(.95);
   background-color: #f3f4f7;
 }
 
-.locationModal .close_{
+.locationModal .close_ {
   position: absolute;
   top: 15px;
   right: 10px;
@@ -138,17 +143,17 @@ body{
   height: 50px;
   min-width: 50px;
   width: 50px;
-  
+
 }
 
-.locationModal .close_ svg{
-  color: rgba(0, 0, 0, 0.66); 
+.locationModal .close_ svg {
+  color: rgba(0, 0, 0, 0.66);
 }
 
 
 
 /* Header Search Bar Section */
-.headerSearch{
+.headerSearch {
   flex: 1;
   max-width: 500px;
   height: 60px;
@@ -161,7 +166,7 @@ body{
   align-items: center;
 }
 
-.headerSearch input{
+.headerSearch input {
   background: transparent;
   outline: none;
   border: none;
@@ -173,12 +178,12 @@ body{
   margin-right: 50px;
 }
 
-.headerSearch input::placeholder{
+.headerSearch input::placeholder {
   color: rgba(0, 0, 0, 0.6);
   font-size: 18px;
 }
 
-.headerSearch button{
+.headerSearch button {
   position: absolute;
   right: 10px;
   top: 50%;
@@ -194,22 +199,22 @@ body{
   background: transparent;
 }
 
-header .headerSearch button svg{
+header .headerSearch button svg {
   font-size: 20px !important;
 }
 
 /* Header User & Cart Section */
-header .part3{
+header .part3 {
   /* background-color: rgb(183, 152, 152); */
   /* width: 170px; */
   height: 60px;
-  min-width: 170px; 
+  min-width: 170px;
   display: flex;
   align-items: center;
-  justify-content:space-evenly ;
+  justify-content: space-evenly;
 }
 
-header .part3 .circle{
+header .part3 .circle {
   /* background-color: red; */
   display: flex;
   align-items: center;
@@ -222,14 +227,14 @@ header .part3 .circle{
   color: rgba(0, 0, 0);
   background: transparent;
   color: green;
-  
+
 }
 
-header .part3 .circle svg{
+header .part3 .circle svg {
   font-size: 22px;
 }
 
-.cartTab{
+.cartTab {
   /* background-color: red; */
   /* width: 100%; */
   padding-left: 8px;
@@ -238,22 +243,22 @@ header .part3 .circle svg{
   justify-content: space-around;
 }
 
-.cartTab .price{
+.cartTab .price {
   font-size: 18px;
   color: rgba(0, 0, 0, 0.8);
   font-weight: 700;
 }
 
-.cartTab button{
+.cartTab button {
   background: #fff1ee !important;
   position: relative;
 }
 
-.cartTab button svg{
+.cartTab button svg {
   color: #ea2b0f !important;
 }
 
-.cartTab .count{
+.cartTab .count {
   position: absolute;
   top: -6px;
   right: -4px;
@@ -291,6 +296,58 @@ nav .navPart1 {
   flex: 0 0 auto;
 }
 
+nav .navPart1 {
+  position: relative;
+  width: 200px;
+  /* background-color: red; */
+  position: relative;
+  z-index: 100;
+}
+
+nav .navPart1 .sidebarNav {
+  background-color: #fff;
+  /* background-color:pink; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  top: 120%;
+  left: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: auto;
+  /* padding: 4px 0PX; */
+  position: absolute;
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+  z-index: -10;
+  transition: all 5s ease-in;
+  
+
+}
+
+nav .navPart1 .sidebarNav.open {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+  z-index: 1000;
+  top: 120%;
+  left: 0;
+
+}
+
+nav .navPart1 .sidebarNav a {
+  width: 100%;
+}
+
+nav .navPart1 .sidebarNav a button {
+  width: 100%;
+}
+
+nav .navPart1 .sidebarNav a:hover {
+  color: #233a95;
+  background-color: #f3f4f7;
+}
+
 nav .allCatTab {
   background: #2bbef9 !important;
   padding: 12px 20px !important;
@@ -301,6 +358,7 @@ nav .allCatTab {
   white-space: nowrap !important;
   border: none !important;
   transition: all 0.3s ease !important;
+  max-width: 200px;
 }
 
 nav .allCatTab:hover {
@@ -330,6 +388,7 @@ nav .navPart2 {
   flex: 1;
   display: flex;
   justify-content: flex-end;
+  /* background-color: #08e731; */
 }
 
 nav .navPart2 ul {
@@ -340,10 +399,12 @@ nav .navPart2 ul {
   padding: 0;
   list-style: none;
   justify-content: flex-end;
+  /* background-color: red; */
 }
 
 nav .navPart2 ul li {
   display: inline-block;
+  position: relative;
 }
 
 nav .navPart2 ul li a {
@@ -364,6 +425,67 @@ nav .navPart2 ul li a:hover {
   transform: translateY(-1px);
 }
 
+nav .navPart2 ul li .submenu {
+  /* display: none; */
+  position: absolute;
+  top: 1000px;
+  left: 0;
+  /* min-width: 200px; */
+  width: 200px;
+  background-color: #f3f4f7;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  max-height: 300px;
+  /* overflow-y: auto; */
+  /* background-color: red; */
+  padding: 2px 2.5%;
+  z-index: -10;
+  transition: all .3s ease-in;
+  visibility: hidden;
+  opacity: 0;
+}
+
+nav .navPart2 ul li:hover .submenu {
+  /* background-color: red; */
+  visibility: inherit;
+  opacity: 1;
+  top: 50px;
+  z-index: 1000;
+}
+
+
+
+nav .navPart2 ul li .submenu a {
+  background-color: #fff;
+  width: 95%;
+  justify-content: flex-start;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  padding: 0px;
+  margin: 5px 2.5%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    background-color: #f3f4f7;
+    color: #233a95;
+  }
+}
+
+nav .navPart2 ul li .submenu a button {
+  /* background-color: blue; */
+  width: 100%;
+  text-transform: capitalize;
+  font-size: 14px;
+  justify-content: flex-start;
+  /* border: 1px solid rgba(0, 0, 0, 0.1); */
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  padding: 12px;
+  height: 100%;
+}
+
+
+
 /* ===== RESPONSIVE DESIGN ===== */
 
 /* Large Screens (Desktop) */
@@ -371,7 +493,7 @@ nav .navPart2 ul li a:hover {
   .headerWrapper .header .container {
     max-width: 1200px;
   }
-  
+
   nav .navPart2 ul li a {
     padding: 12px 20px;
     font-size: 15px;
@@ -380,69 +502,80 @@ nav .navPart2 ul li a:hover {
 
 /* Medium Screens (Tablet) */
 @media (max-width: 991px) {
+
   /* Header adjustments */
   .headerWrapper .header .part2 {
     flex-wrap: wrap;
     gap: 10px;
   }
-  
+
   .headerWrapper .header .part2 .countryDrop {
     width: 150px;
     min-width: 150px;
   }
-  
+
   header .headerSearch {
     min-width: 300px;
     margin: 5px;
   }
-  
+
   header .part3 {
-    
+
     min-width: 150px;
   }
-  
+
   /* Navigation adjustments */
+
   nav .container {
     flex-direction: column;
-    gap: 15px;
+    /* gap: 10px; */
+    /* background-color: red; */
+    position: relative;
+
+
   }
-  
+
   nav .navPart1 {
     order: 2;
-    width: 100%;
-    text-align: center;
+    /* background-color: black; */
+    position: absolute;
+    top: 110%;
+    left: 0px;
   }
-  
+
   nav .allCatTab {
     width: 100% !important;
     justify-content: center !important;
+
   }
-  
+
   nav .navPart2 {
+    /* background-color: red; */
     order: 1;
     width: 100%;
     justify-content: center;
   }
-  
+
   nav .navPart2 ul {
-    justify-content: center;
+    justify-content: start;
     flex-wrap: wrap;
   }
 }
 
 /* Small Screens (Mobile) */
 @media (max-width: 768px) {
+
   /* Top strip */
   .headerWrapper .top-strip p {
     font-size: 15px;
     padding: 0 10px;
   }
-  
+
   /* Header */
   .headerWrapper .header {
     padding: 10px 0;
   }
-  
+
   .logoWrapper img {
     width: 90px;
     height: 90px;
@@ -453,24 +586,24 @@ nav .navPart2 ul li a:hover {
     width: 250px;
     padding: 6px 8px;
   }
-  
+
   /* Make header stack vertically on mobile */
   .headerWrapper .header .row {
     flex-direction: column;
     gap: 15px;
   }
-  
+
   .headerWrapper .header .logoWrapper {
     text-align: center;
     width: 100%;
   }
-  
+
   .headerWrapper .header .part2 {
     width: 100%;
     flex-direction: column;
     gap: 15px;
   }
-  
+
   .headerWrapper .header .part2 .countryDrop {
     width: 250px;
     padding: 6px 8px;
@@ -479,84 +612,93 @@ nav .navPart2 ul li a:hover {
 
   .headerWrapper .header .part2 .countryDrop .label {
     font-size: 15px;
-    font-weight:700;
+    font-weight: 700;
   }
 
   .headerWrapper .header .part2 .countryDrop .name {
     font-size: 15px;
     font-weight: 700;
   }
-  
+
   header .headerSearch {
     width: 100%;
     min-width: unset;
     margin: 0;
   }
-  
+
   header .headerSearch input {
     font-size: 16px;
   }
-  
+
   header .headerSearch input::placeholder {
     font-size: 16px;
   }
-  
+
   header .part3 {
     width: 100%;
     min-width: unset;
     justify-content: space-between;
   }
-}
-/* Extra Small Screens */
-@media (max-width: 480px) {
-  .headerWrapper .top-strip p {
-    font-size: 15px;
-    padding: 0 8px;
+
+  nav .navPart1 {
+    order: 2;
+    /* background-color: black; */
+    position: absolute;
+    top: 110%;
+    left: auto;
   }
 
-  .headerWrapper .header {
-    padding: 10px 0;
-  }
-  
-  .logoWrapper img {
-    width: 90px;
-    height: 90px;
-  }
-  
-  .headerWrapper .header .part2 .countryDrop {
-    width: 250px;
-    padding: 6px 8px;
-  }
-  
-  .headerWrapper .header .part2 .countryDrop .label {
-    font-size: 15px;
-    font-weight:700;
-  }
-  
-  .headerWrapper .header .part2 .countryDrop .name {
-    font-size: 15px;
-    font-weight: 700;
-  }
-  
-  header .headerSearch input {
-    font-size: 14px;
-    padding: 0 15px;
-  }
-  
-  header .headerSearch input::placeholder {
-    font-size: 14px;
-  }
-  
-  .cartTab .price {
-    font-size: 16px;
-  }
-  
-  nav .allCatTab .text {
-    font-size: 14px;
-  }
-  
-  nav .navPart2 ul li a {
-    font-size: 13px;
-    padding: 12px;
+  /* Extra Small Screens */
+  @media (max-width: 480px) {
+    .headerWrapper .top-strip p {
+      font-size: 15px;
+      padding: 0 8px;
+    }
+
+    .headerWrapper .header {
+      padding: 10px 0;
+    }
+
+    .logoWrapper img {
+      width: 90px;
+      height: 90px;
+    }
+
+    .headerWrapper .header .part2 .countryDrop {
+      width: 250px;
+      padding: 6px 8px;
+    }
+
+    .headerWrapper .header .part2 .countryDrop .label {
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .headerWrapper .header .part2 .countryDrop .name {
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    header .headerSearch input {
+      font-size: 14px;
+      padding: 0 15px;
+    }
+
+    header .headerSearch input::placeholder {
+      font-size: 14px;
+    }
+
+    .cartTab .price {
+      font-size: 16px;
+    }
+
+    nav .allCatTab .text {
+      font-size: 14px;
+    }
+
+    nav .navPart2 ul li a {
+      font-size: 13px;
+      padding: 12px;
+    }
   }
 }

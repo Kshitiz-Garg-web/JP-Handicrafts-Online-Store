@@ -6,10 +6,11 @@ import { FcSearch } from "react-icons/fc";
 import Button from '@mui/material/Button';
 import { LuCircleUserRound } from "react-icons/lu";
 import { IoBagHandleOutline } from "react-icons/io5";
-import { IoIosMenu } from "react-icons/io";
-import { FaAngleDown } from "react-icons/fa";
-import CountryDropdown  from "../CountryDropdown";
+// import { IoIosMenu } from "react-icons/io";
+// import { FaAngleDown } from "react-icons/fa";
+import CountryDropdown from "../CountryDropdown";
 import { MyContext } from "../../App";
+import Navigation from "../Navigation";
 
 
 const Header = () => {
@@ -39,7 +40,7 @@ const Header = () => {
               {/* Header Main Content Section */}
               <div className="col-lg-10 col-md-12 d-flex align-items-center part2">
                 {/* dropdown */}
-                {context.countryList.length!==0 && <CountryDropdown />}
+                {context.countryList.length !== 0 && <CountryDropdown />}
 
 
 
@@ -77,61 +78,7 @@ const Header = () => {
         </header>
 
         {/* ===== NAVIGATION SECTION ===== */}
-        <nav>
-          <div className="container">
-            {/* Left Part - All Categories Button */}
-            <div className="navPart1">
-              <Button className="allCatTab">
-                <span className="icon1">
-                  <IoIosMenu />
-                </span>
-                <span className="text">All Categories</span>
-                <span className="icon2">
-                  <FaAngleDown />
-                </span>
-              </Button>
-            </div>
-
-            {/* Right Part - Navigation Menu */}
-            <div className="navPart2">
-              <ul>
-                <li>
-                  <Link to="/">Home</Link>
-                </li>
-                <li>
-                  <Link to="/shop">Shop</Link>
-                </li>
-                <li>
-                  <Link to="/about">About</Link>
-                </li>
-                <li>
-                  <Link to="/contact">Contact</Link>
-                </li>
-                <li>
-                  <Link to="/faq">FAQ</Link>
-                </li>
-                <li>
-                  <Link to="/blog">Blog</Link>
-                </li>
-                <li>
-                  <Link to="/deals">Deals</Link>
-                </li>
-
-              </ul>
-            </div>
-          </div>
-        </nav>
-
-
-
-
-
-
-
-
-
-
-
+        <Navigation />
 
       </div>
     </>
